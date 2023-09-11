@@ -28,7 +28,16 @@ public class Metodos {
     }
     
     double expX(double x, int n){
-        
-        return 0;
+        double val=0;
+        int expon=1;
+        int ex=1;
+        for (int i = 1; i <= n; i++) {
+            x=Math.pow(x, expon);
+            expon= expon+1;
+            ex=ex*i;
+            val=val+(x/ex);
+        }
+        val=val+1;
+        return val;
     }
 }

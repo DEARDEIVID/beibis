@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -37,7 +38,7 @@ public class TextFieldFrame extends JFrame{
         add(etiqueta2);
         add(textField2);// add textField1 to JFrame
 // construct textfield with default text and 21 columns
-        etiqueta3 = new JLabel("Calcular exponencial a la x, ingrese x");
+        etiqueta3 = new JLabel("Calcular exponencial x, ingrese x");
         textField3 = new JTextField(5);
         etiqueta4 = new JLabel("Ingrese la cantidad de veces que se repetirá");
         textField4 = new JTextField(5);
@@ -66,6 +67,8 @@ public class TextFieldFrame extends JFrame{
         double x = Double.parseDouble(textField3.getText());
         int veces = Integer.parseInt(textField4.getText());
         double resltExp = metodos.expX(x, veces);
+        
+        JOptionPane.showInternalMessageDialog(null, "La estimacion es= " + resltExp, "Estimacion", JOptionPane.PLAIN_MESSAGE);
         }
     }
 }
