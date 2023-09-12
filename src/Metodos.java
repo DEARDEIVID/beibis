@@ -20,7 +20,7 @@ public class Metodos {
         double fact = 1;
         double val=0;
         for (int i = 1; i <= c; i++) {
-            fact=fact*i;
+            fact=factorial(i);
             val=val+(1/fact);
         }
         val=val+1;
@@ -34,7 +34,7 @@ public class Metodos {
         for (int i = 1; i <= n; i++) {
             x=Math.pow(x, expon);
             expon= expon+1;
-            ex=ex*i;
+            ex=factorial(i);
             val=val+(x/ex);
         }
         val=val+1;

@@ -68,7 +68,7 @@ public class TextFieldFrame extends JFrame{
         int veces = Integer.parseInt(textField4.getText());
         double resltExp = metodos.expX(x, veces);
         
-        JOptionPane.showInternalMessageDialog(null, "La estimacion es= " + resltExp, "Estimacion", JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showInternalMessageDialog(null, "El factorial es: " + resfac + "\n  El exponencial es: "+ resltcons + "\n El exponencial x es: " + resltExp, "Resultados", JOptionPane.PLAIN_MESSAGE);
         }
     }
 }
